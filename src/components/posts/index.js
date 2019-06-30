@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {fetchPosts} from '../redux/actions/postActions';
+import {fetchPosts} from '../../helpers/redux/actions/postActions';
 
 
 export class Posts extends Component { 

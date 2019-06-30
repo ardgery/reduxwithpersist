@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createPost } from '../redux/actions/postActions';
+import { createPost } from '../../helpers/redux/actions/postActions';
 
 export class postform extends Component {
     constructor(props){

@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
-import Posts from './components/posts';
-import PostForm from './components/postform';
+import Posts from '../posts';
+import PostForm from '../postform';
 
 import { Provider } from 'react-redux'
-import store from './redux/store';
+import store from '../../helpers/redux/store';
 
 
 function App() {
