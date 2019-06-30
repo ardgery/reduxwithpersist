@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createPost } from '../../helpers/redux/actions/postActions';
+import { createPost,setNewPosts } from '../../helpers/redux/actions/postActions';
 
 export class postform extends Component {
     constructor(props){
@@ -23,6 +23,7 @@ export class postform extends Component {
             body:this.state.body
         }
         this.props.createPost(post);
+        // this.props.setNewPosts(post);
     }
 
     render() {
@@ -50,7 +51,8 @@ export class postform extends Component {
 }
 
 postform.propTypes = {
-    createPost: PropTypes.func.isRequired
+    createPost: PropTypes.func.isRequired,
+    setNewPosts: PropTypes.func.isRequired,
   };
   
-  export default connect(null, { createPost })(postform);
+  export default connect(null, { createPost,setNewPosts })(postform);
