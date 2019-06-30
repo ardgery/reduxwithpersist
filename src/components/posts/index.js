@@ -18,9 +18,6 @@ export class Posts extends Component {
     
 
     render() {
-        console.log("PROPTYPES FETCHPOST = ",this.props.fetchPosts);
-        console.log("PROPTYPES NEWPOST = ",this.props.newPost);
-        console.log("PROPTYPES POSTS = ",this.props.posts);
         return (
             <div>
                 <h1>Posts</h1>
