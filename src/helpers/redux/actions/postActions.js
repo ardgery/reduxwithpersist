@@ -30,6 +30,7 @@ export const fetchPosts = () => dispatch =>{
 };
 
 export const createPost = postData => dispatch =>{
+    console.log("POST DATAAAA = ",postData);
     // axios.post('https://jsonplaceholder.typicode.com/posts/',postData)
     // .then(posts=>
     //     dispatch({

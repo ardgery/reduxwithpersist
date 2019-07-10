@@ -7,5 +7,6 @@ export default {
     selectedLang: "",
     activeApp: {},
     showErrorPopup: false,
-    countryList: []
+    countryList: [],
+    withNewData: false
   }

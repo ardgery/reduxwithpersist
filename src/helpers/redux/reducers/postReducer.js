@@ -13,11 +13,12 @@ export default function(state = States, action){
         case NEW_POST:
             return {
                 ...state,
-                // items:[
-                //     action.payload,
-                //     ...state.items
-                // ],
-                item:action.payload
+                items:[
+                    action.payload,
+                    ...state.items
+                ],
+                item:action.payload,
+                withNewData:true
             };
         case RESET_NEW_POST:
             return {
